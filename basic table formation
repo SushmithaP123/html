@@ -1,3 +1,4 @@
+format:
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,4 +30,72 @@
 </body>
 
 </html>
+
+
+########################################################
+example
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,th,td{
+border: 1px solid black;
+border-collapse: collapse;
+}
+thead{
+position:sticky
+}
+</style>
+</head>
+<body>
+<table>
+<thead>
+<tr style="background-color:orange">
+<th>Id</th>
+<th>Name</th>
+<th>Email</th>
+<th colspan="2">Phone Number</th>
+</tr>
+</thead>
+<tr>
+<td>001</td>
+<td>Mark Smith</td>
+<td>m.smith@gmail.com</td>
+<td>0034 238 212 123</td>
+<td>0034 78 261 231</td>
+</tr>
+<tr>
+<td>002</td>
+<td>Martha Collins</td>
+<td>martha.collins@yahoo.com</td>
+<td>0034 726 121 984</td>
+</tr>
+<tr>
+<td>003</td>
+<td>Sam McNeal</td>
+<td>smn@gmail.com</td>
+<td>0022 081 273 552</td>
+</tr>
+<tr>
+<td>004</td>
+<td>Sarah Powels</td>
+<td>spowels@yahoo.com</td>
+<td>0044 019 937 133</td>
+</tr>
+<tr>
+<td>005</td>
+<td>Peter Kovalsky</td>
+<td>peter.kovalsky@outlook.com</td>
+<td>0022 836 657 342</td>
+</tr>
+<tr>
+<td>006</td>
+<td>John Doe</td>
+<td>john.doe@yahoo.com</td>
+<td>0021 384 482 173</td>
+</tr>
+</table>
+</body>
+</html>
+
     
