@@ -1,0 +1,25 @@
+declare
+num1 integer:=100;
+num2 integer:=200;
+num3 integer;
+num4 integer;
+num5 integer;
+num6 integer;
+begin
+num3:=num2-num1;
+num4:=num1*num2;
+dbms_output.put_line('outer variable is' ||num3);
+dbms_output.put_line('outer variable is' ||num4);
+   declare
+   num5 integer:=1;
+   num6 integer:=2;
+   begin
+   dbms_output.put_line('outer variable is' ||num5);
+   dbms_output.put_line('outer variable is' ||num6);
+   declare
+   test varchar(20):='sush';
+   begin
+   dbms_output.put_line(test);
+   end;
+   end;
+end/
