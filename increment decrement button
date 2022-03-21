@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="incdec.css">
+</head>
+<body style="background-color: bisque;">
+    <h1>INCREASE AND DECREASE</h1>
+    
+   <button onclick="increment()">INCREMENT</button> 
+    <div id="counting"></div> 
+      <button onclick="decrement()">DECREMENT</button>
+
+</body>
+<script>
+    var num=0;
+    document.getElementById("counting").innerHTML=num;
+    function increment(){
+        num=num+1;
+        document.getElementById("counting").innerHTML=num;
+    }
+    function decrement(){
+        num=num-1;
+        document.getElementById("counting").innerHTML=num;
+    }
+</script>
+</html>
+
+
+#################################
+incdec.css:
+
+button{
+    background-color: aqua;
+    margin: auto;
+    color: black;
+    shape-outside: -moz-element();
+}
+h2{
+    color: brown;
+}
+button:hover{
+    background-color: blue;
+
+}
+h1{
+    background-color: blueviolet;
+    text-align: center;
+}
+
