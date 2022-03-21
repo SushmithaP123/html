@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        WELCOME TO MY TABLE
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>xxx</th>
+                <th>yyy</th>
+                <th>zzz</th>
+                <th>qqq</th>
+
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+            </tr>
+          <tr>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+                <td>g</td>
+            </tr>
+
+        </table>
+</body>
+
+</html>
+    
