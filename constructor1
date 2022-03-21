@@ -1,0 +1,13 @@
+class hello
+{
+    constructor(name,work)
+    {
+        this.name=name;
+        this.work=work;
+    }
+    naming(){
+        console.log(`My name is ${this.name} and i work at ${this.work} and im proud of it`);
+    }
+}
+    let me = new hello("prakash","xxx");
+    me.naming();
