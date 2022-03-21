@@ -1,0 +1,9 @@
+class classA{
+    a:number;
+    b:String;
+}
+let p=new classA();
+p.a=1;
+p.b="ok";
+console.log(p.a);
+console.log(p.b);
