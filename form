@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hi</title>
+    </head>
+    <body>
+        <form action="assign.html">
+            gmail:<input type="email" id="email" name="email"><br>
+            <button type="submit">submit</button><br>
+            
+           please enter password: <input type="password" id="password">
+           usr id:<br>
+           <input type="text" value="name">
+        </form>
+    </body>
+</html>
+
+#########################
+
+assign.html
+
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+   <h1>successfully submitted</h1>
+    </body>
+    <style>
+        h1{
+            background-color: aqua;
+        }
+    </style>
+    
+
+</html>
