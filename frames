@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Frame tag 
+        </title>
+    </head>
+    <frameset cols="25%,50%,25%">
+        <frame src="frame1.html"></frame>
+
+        <frame src="frame2.html"></frame>
+        <frame src="frame3.html"></frame>
+    </frameset>
+</html>
+
+########################################
+frames1:
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                background-color: aqua;
+                height: 1000px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <h2>
+                this is first frame
+            </h2>
+        </div>
+    </body>
+</html>
+##############################################
+frames2:
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                background-color:antiquewhite;
+                height: 1000px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <h2>
+                this is second frame
+            </h2>
+        </div>
+    </body>
+</html>
+######################################################
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                background-color:rgb(13, 136, 136);
+                height: 1000px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <h2>
+                this is third frame
+            </h2>
+        </div>
+    </body>
+</html>
