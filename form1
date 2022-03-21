@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="sytlesheet" href="styling.css">
+    <h3>here i am doing something interesting</h3>
+</head>
+<body style="background-color: aqua;">
+    <p id="idd">example for getelementbyid</p>
+    <p name="namee">example for getelementbyname</p>
+    <p class="classe">example for getelementsbyclass</p>
+    <form action="assign.html">
+        Full name:<input type="text"  id="name" >
+                <div id="namecheck"></div>
+        <br><br>
+        student:<input type="radio" value="yes">
+                <label for="name">yes</label><br><br>
+                <input type="radio" id="name1" onkeyup="validate();">
+                <label for="name1">No</label><br><br>
+        city:<select id="city">
+            <option>city</option>
+             <option>hyderabad</option>
+             <option>chennai</option>
+             <option>bangalore</option>
+             <option>delhi</option>
+             <option>kolkata</option>
+             <option>mumbai</option>
+             </select><br><br>
+             <a href="https://www.google.com" target="_blank">go to google in new tab</a>
+            
+             <input type="submit" value="submit">
+             <button type="reset" >cancel</button>
+             <button type="button" onclick="trying();">try</button>
+             <button type="button" onclick="validateForm();">Validate</button>
+
+             
+
+    </form>
+</body>
+            <script type="text/javascript">
+                function validateForm(){
+                var input=document.getElementById("name").value;
+                if(input.length>4)
+                document.getElementById("namecheck").innerHTML="OK";
+                else
+                document.getElementById("namecheck").innerHTML="valid format only";
+                };
+
+                    function trying(){
+                    document.getElementById("idd").innerHTML="changed id";
+                    document.getElementsByName("namee")[0].innerHTML="changed name";
+                    document.getElementsByClassName("classe")[0].innerHTML="changed class"
+
+                };
+    
+             </script>
+
+</html>
+
+##########################
+styling.css
+h3{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
