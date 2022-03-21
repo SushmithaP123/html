@@ -1,0 +1,26 @@
+example1:
+declare
+  subtype name IS char(20);
+  subtype message IS varchar2(20);
+  testname name;
+  testmessage message;
+begin
+     testname:='dev';
+     testmessage:='hello';
+     dbms_output.put_line('hi '||testname||testmessage);
+end;
+/
+############################
+example 2:
+declare
+   a integer:=10;
+   b integer:=20;
+   c integer;
+   f real;
+begin
+c:=a+b;
+dbms_output.put_line('value of c=' || c);
+f:=10.0/5.0;
+dbms_output.put_line('value of f=' || f);
+end;
+/
