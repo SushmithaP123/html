@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>this is second assignment</p>
+    <p class="xyz">this is second assignment</p>
+    <input type="radio" id="'dev" name="'occupation"value="developer">
+    <laber for="dev">developer</laber><br>
+    <input type="radio" id="'test" name="'occupation"value="tester">
+    <laber for="test">tester</laber><br>
+    <input type="radio" id="'manager" name="'occupation"value="manager">
+    <laber for="dev">manager</laber><br>
+    
+</body>
+</html>
