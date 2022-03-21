@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string='sushmithap';
+        var temp=`${string} is my name`;
+        console.log(temp);
+    </script>
+     
+</body>
+</html>
