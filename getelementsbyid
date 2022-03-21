@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<body>
+<p id="paragragh1"></p>
+<p id="paragragh2">I am in two</p>
+</body>
+<script>
+const element=document.getElementById("paragragh1");
+document.getElementById("paragragh1").innerHTML="Adding another string 1:";
+const element1=document.getElementByTagName("p");
+document.getElementByTagName("p").innerHTML="Adding another string 1:" + element[1].innerHTML;
+
+
+</script>
+
+</html>
