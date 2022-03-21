@@ -1,0 +1,100 @@
+drop table trainee;
+create table trainee(
+    rollno numeric,
+    fname varchar(20),
+    lname varchar(20),
+    emailid varchar(20)
+);
+insert into trainee(rollno,fname,lname,emailid)values(101,'sushmitha','prakash','abc@gmail.com');
+insert into trainee(rollno,fname,lname,emailid)values(102,'deepa','som','abc@gmail.com');
+insert into trainee(rollno,fname,lname,emailid)values(103,'prakash','sid','abc@gmail.com');
+insert into trainee(rollno,fname,lname,emailid)values(104,'prajwal','prakash','abc@gmail.com');
+insert into trainee(rollno,fname,lname,emailid)values(105,'sree','sai','abc@gmail.com');
+insert into trainee(rollno,fname,lname,emailid)values(106,'pree','jem','abc@gmail.com');
+insert into trainee(rollno,fname,lname,emailid)values(107,'honey','rak','abc@gmail.com');
+insert into trainee(rollno,fname,lname,emailid)values(108,'mic','joe','abc@gmail.com');
+insert into trainee(rollno,fname,lname,emailid)values(109,'per','sue','abc@gmail.com');
+insert into trainee(rollno,fname,lname,emailid)values(110,'manj','prasad','abc@gmail.com');
+select * from trainee;
+declare
+c_id trainee.rollno%type:=108;
+c_name trainee.fname%type;
+c_email varchar(20);
+begin
+select rollno,fname,emailid into c_id,c_name,c_email from trainee where rollno=c_id;
+dbms_output.put_line(c_name);
+end;
+/
+declare
+c_id trainee.rollno%type;
+c_fname trainee.fname%type;
+c_lname trainee.lname%type;
+c_email varchar(20);
+cursor c_trainee is select rollno,fname,lname,emailid from trainee;
+begin
+open c_trainee;
+loop
+fetch c_trainee into c_id,c_fname,c_lname,c_email;
+exit when c_trainee%notfound;
+dbms_output.put_line(c_id||' '||c_fname||' '||c_lname||' '||c_email);
+end loop;
+close c_trainee;
+end;
+/
+declare
+cursor c_trainee is select rollno,fname,lname,emailid from trainee;
+t_trainee c_trainee%rowtype;
+begin
+open c_trainee;
+loop
+fetch c_trainee into t_trainee.rollno,t_trainee.fname,t_trainee.lname,t_trainee.lname;
+exit when c_trainee%notfound;
+dbms_output.put_line(t_trainee.rollno||' '||t_trainee.fname||' '||t_trainee.lname||' '||t_trainee.lname);
+end loop;
+close c_trainee;
+end;
+/
+declare
+cursor c_t is select * from trainee where fname like 's%' or fname like 'p%';
+t_trainee c_t%rowtype;
+begin
+open c_t;
+loop
+fetch c_t into t_trainee.rollno,t_trainee.fname,t_trainee.lname,t_trainee.lname;
+exit when c_t%notfound;
+dbms_output.put_line(t_trainee.rollno||' '||t_trainee.fname||' '||t_trainee.lname||' '||t_trainee.lname);
+end loop;
+close c_t;
+end;
+/
+declare
+    cursor c_t is
+        select * from trainee where fname like 'z%';
+    t_trainee c_t%rowtype;
+begin
+    open c_t;
+    loop
+        fetch c_t into t_trainee.rollno,t_trainee.fname,t_trainee.lname,t_trainee.lname;
+        exit when c_t%notfound;
+        dbms_output.put_line(t_trainee.rollno||' '||t_trainee.fname||' '||t_trainee.lname||' '||t_trainee.lname);
+    end loop;
+    close c_t;
+exception
+    when NO_DATA_FOUND then
+        dbms_output.put_line('No name starting from z');
+    when others then 
+        dbms_output.put_line('error');
+end;
+/
+declare
+total_rows number;
+begin
+update trainee set emailid = 'xxx@gmail.com';
+if sql%notfound then
+        dbms_output.put_line('not found');
+elsif sql%found then
+        total_rows:=sql%rowcount;
+        dbms_output.put_line('total number of are'||' '||total_rows);
+end if;
+end;
+/
