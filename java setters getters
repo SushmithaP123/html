@@ -1,0 +1,68 @@
+package com.sushmitha;
+
+public class trainee {
+	private int id;
+	private String name;
+	private static String deptname;
+	private static String companyname;
+	protected int a=0;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public static String getDeptname() {
+		return deptname;
+	}
+	public static void setDeptname(String deptname) {
+		trainee.deptname = deptname;
+	}
+	public static String getCompanyname() {
+		return companyname;
+	}
+	public static void setCompanyname(String companyname) {
+		trainee.companyname = companyname;
+	}
+	
+
+}
+package com.sushmitha;
+
+public class trainee_test {
+	public static void main(String[] args) {
+		
+		trainee sush=new trainee();
+		trainee manju=new trainee();
+		trainee deepa=new trainee();
+		trainee prakash=new trainee();
+ 
+		sush.setId(1);
+		manju.setId(11);
+		deepa.setId(111);
+		prakash.setId(1111);
+		
+		sush.setName("sushmitha p");
+		manju.setName("prajwal");
+		deepa.setName("deepa prakash s");
+		prakash.setName("prakash kumar s");
+		
+		trainee.setDeptname("abc");
+		trainee.setCompanyname("pdsp");
+
+		System.out.println(prakash.getName());
+		System.out.println(deepa.getDeptname());
+		System.out.println(manju.a);
+
+
+		
+	}
+
+}
